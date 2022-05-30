@@ -1,5 +1,5 @@
 # fast_digit
-I used fast.ai and FastAPI to create this small api that tries to recognize a digit you draw.
+I used fast.ai and FastAPI to create this small api that tries to recognize digits you draw.
 
 
 ### Dependencies:
