@@ -33,11 +33,7 @@ def train():
     loaders = block.dataloaders(path / "training", bs=64)
 
     # resnet18
-    learn = vision_learner(
-        loaders,
-        arch=resnet18,
-        metrics=accuracy,
-    )
+    learn = vision_learner(loaders, arch=resnet18, metrics=accuracy,)
 
     # train
     learn.fine_tune(5, base_lr=1e-2, cbs=[ShowGraphCallback()])
