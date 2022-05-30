@@ -1,19 +1,7 @@
-from fastai.vision.all import (
-    untar_data,
-    URLs,
-    vision_learner,
-    aug_transforms,
-    accuracy,
-    ShowGraphCallback,
-)
-from fastai.vision.data import (
-    DataBlock,
-    ImageBlock,
-    CategoryBlock,
-    get_image_files,
-    RandomSplitter,
-    parent_label,
-)
+from fastai.vision.all import (ShowGraphCallback, URLs, accuracy,
+                               aug_transforms, untar_data, vision_learner)
+from fastai.vision.data import (CategoryBlock, DataBlock, ImageBlock,
+                                RandomSplitter, get_image_files, parent_label)
 from fastai.vision.models import resnet18
 
 

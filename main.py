@@ -1,13 +1,10 @@
-from fastapi import FastAPI, Request, File, UploadFile
+import torch
+import torchvision.transforms as T
+from fastai.vision.all import Image, load_learner
+from fastapi import FastAPI, File, Request, UploadFile
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-
-import numpy as np
-import torch
-from fastai.vision.all import load_learner, Image
-import torchvision.transforms as T
-
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
